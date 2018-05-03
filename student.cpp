@@ -41,5 +41,10 @@ double student::getScore()
   total = total + grade[i];
  }
  return total/grade.size();
-  
+ 
+ if(grade.size() == 0)
+ {
+  return 0;
+ }
+
 }
