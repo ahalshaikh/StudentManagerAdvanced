@@ -40,9 +40,11 @@ double student::getScore()
  {
   total = total + grade[i];
  }
+ if(grade.size() > 0)
+ {
  return total/grade.size();
- 
- if(grade.size() == 0)
+ }
+ else if(grade.size() == 0)
  {
   return 0;
  }
